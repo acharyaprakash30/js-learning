@@ -1,0 +1,31 @@
+web safe fonts 
+  -- it was pre iinstalled fonts in your os
+
+eg font-family:'arial'
+
+
+web fonts
+
+	google font website  for web fonts
+
+	url to import fonts : https://fonts.googleapis.com/css2?family=Crimson+Pro
+	to do this <link href=" https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet" />
+
+
+
+css used
+line height
+font-weight
+font-style
+
+
+position
+-static:
+  static is a default value 
+ in static it will change only on margin and padding not on top down bottom left
+	
+-fixed 
+	stich to one place
+
+inside relative it contain absolute
+

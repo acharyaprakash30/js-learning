@@ -1,0 +1,226 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>oop</h1>
+    <script>
+    class person{
+        constructor(name,id){
+            this.name = name;
+            this.id = id;
+        }
+        add_Address(add){
+            this.add = add;
+        }
+        getDetails(){
+            console.log(`Name is ${this.name},
+            Address is: ${this.add}`);
+        }
+        static sayHii(){
+            console.log("hiii")
+        }
+    }
+      
+    let person1 = new person('Mukul',21);
+    person1.add_Address('Delhi');
+    person1.getDetails();
+    person.sayHii();
+    
+    </script>
+</body>
+</html> -->
+
+<!-- //inheritance -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>inheritance</p>
+
+    <script>
+      class employee {
+        constructor(n) {
+          this.name = n;
+        }
+        msg(){
+            console.log('hello');
+        }
+      }
+      class manager extends employee {
+        constructor(n,m){
+            super(n);
+            this.post = m;
+        }
+        msg(){
+            console.log('hello from message');
+        }
+        info(){
+            // super.msg();
+            this.msg();
+            console.log(this.name + " is manager");
+        }
+      }
+      let mg1 = new manager("prakash","manager");
+      console.log(mg1.info());
+    </script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Function</title>
+</head>
+<body>
+  <p>private class</p>
+  <i class="fa fa-address-book" aria-hidden="true"></i>
+
+
+  <script>
+    class emp{
+      #name="";
+      constructor(n){
+        this.#name = n;
+      }
+      getName(){
+        return this.#name
+      }
+    }
+    let employee = new emp("ram");
+    console.log(employee.getName())
+
+  </script>
+  
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>class and object</p>
+
+  <script>
+
+    class rectangle{
+      constructor(l,b,h){
+        this.length = l;
+        this.bredth = b;
+        this.height = h;
+      }
+      area(){
+        return this.length*this.bredth
+      }
+      volume(){
+        return this.length*this.bredth*this.height
+      }
+    }
+    let rect1 = new rectangle(10,20,30);
+    let rect2 = new rectangle(70,80,90);
+    console.log(rect2.volume());
+  </script>
+  
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>inheritance</p>
+
+    <script>
+      class softwareCompany {
+        constructor(n) {
+          this.companyName = n;
+        }
+        location() {
+          console.log("software company address");
+        }
+      }
+      class manager extends softwareCompany {
+        constructor(n, m) {
+          super(n);
+          this.managerName = m;
+        }
+        location() {
+          console.log("manager location");
+        }
+        getAddress() {
+          super.location();
+        }
+      }
+      let m1 = new manager("bootwal", "ram");
+      console.log(m1.getAddress());
+    </script>
+  </body>
+</html> -->
+
+<!-- akinator -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Area and volume of rectangle</p>
+    <script>
+      class rectangle {
+        constructor(l) {
+          this.length = l;
+        }
+      
+      }
+      class area extends rectangle {
+        constructor(l, b) {
+          super(l);
+          this.breadth = b;
+        }
+        calculateArea(){
+          return this.length * this.breadth
+        }
+      }
+      class volume extends area {
+        constructor(l, b, h) {
+          super(l, b);
+          this.height = h;
+        }
+        calculateVolume(){
+          return this.length*this.breadth*this.height
+        }
+      }
+    let volume1 = new volume(10,20,30);
+    console.log(volume1.calculateVolume());
+      
+    </script>
+  </body>
+</html>

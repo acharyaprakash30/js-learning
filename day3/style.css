@@ -1,0 +1,22 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    
+}
+.card{
+    border: 2px solid crimson;
+    padding: 20px;
+}
+.priceandrating{
+    display: flex;
+    gap: 20px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
